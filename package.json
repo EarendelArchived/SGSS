@@ -1,6 +1,6 @@
 {
   "name": "sgss",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Socket.io Game Server Standard with NodeJS",
   "main": "index.js",
   "scripts": {
