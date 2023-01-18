@@ -37,13 +37,13 @@ io.on('connection', function(socket){
     socket.on('updatePosition', function(data) {
         player.position.x = data.position.x
         player.position.y = data.position.y;
-        
+
         socket.broadcast.emit('updatePosition', player)
     })
 
     socket.on('disconnect', function() {
         Debug(`연결이 해제되었습니다. 소켓 아이디: ${socket.id}`)
-        delete playes[thisPlayerID];
+        delete players[thisPlayerID];
         delete sockets[thisPlayerID];
     })
 })
